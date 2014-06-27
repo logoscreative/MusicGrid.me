@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC5087D194295B3005A9BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC5087C194295B3005A9BEA /* Foundation.framework */; };
+		0DC5087F194295B3005A9BEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC5087E194295B3005A9BEA /* CoreGraphics.framework */; };
+		0DC50881194295B3005A9BEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC50880194295B3005A9BEA /* UIKit.framework */; };
+		0DC50887194295B3005A9BEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DC50885194295B3005A9BEA /* InfoPlist.strings */; };
+		0DC50889194295B3005A9BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC50888194295B3005A9BEA /* main.m */; };
+		0DC5088D194295B3005A9BEA /* MGMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5088C194295B3005A9BEA /* MGMAppDelegate.m */; };
+		0DC5088F194295B3005A9BEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5088E194295B3005A9BEA /* Images.xcassets */; };
+		0DC50896194295B3005A9BEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC50895194295B3005A9BEA /* XCTest.framework */; };
+		0DC50897194295B3005A9BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC5087C194295B3005A9BEA /* Foundation.framework */; };
+		0DC50898194295B3005A9BEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC50880194295B3005A9BEA /* UIKit.framework */; };
+		0DC508A0194295B3005A9BEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DC5089E194295B3005A9BEA /* InfoPlist.strings */; };
+		0DC508A2194295B3005A9BEA /* MusicGridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC508A1194295B3005A9BEA /* MusicGridTests.m */; };
+		B00D0F1E1944B806004C44CF /* MGMArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D0F1D1944B806004C44CF /* MGMArtistsViewController.m */; };
+		B00D0F201944CE4C004C44CF /* ios-members area@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B00D0F1F1944CE4C004C44CF /* ios-members area@2x.png */; };
+		B03E98731942AEED00DE10D6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E98721942AEED00DE10D6 /* FacebookSDK.framework */; };
+		B03E987619437B6A00DE10D6 /* MGMData.m in Sources */ = {isa = PBXBuildFile; fileRef = B03E987519437B6A00DE10D6 /* MGMData.m */; };
+		B0547A1419442FCB00D7BFA1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0547A1319442FCB00D7BFA1 /* Parse.framework */; };
+		B0862F311943D1440032A459 /* MGMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0862F2E1943D1440032A459 /* MGMTableView.m */; };
+		B0862F321943D1440032A459 /* MGMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0862F301943D1440032A459 /* MGMTableViewCell.m */; };
+		B0862F351943D1820032A459 /* MGMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0862F341943D1820032A459 /* MGMCollectionViewController.m */; };
+		B0862F381943E3550032A459 /* Mockup.png in Resources */ = {isa = PBXBuildFile; fileRef = B0862F371943E3550032A459 /* Mockup.png */; };
+		B0862F3A1943ED510032A459 /* Mockup2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0862F391943ED510032A459 /* Mockup2@2x.png */; };
+		B0862F4C194401D10032A459 /* images1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F3D194401D10032A459 /* images1.jpg */; };
+		B0862F4D194401D10032A459 /* images2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F3E194401D10032A459 /* images2.jpg */; };
+		B0862F4E194401D10032A459 /* images3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F3F194401D10032A459 /* images3.jpg */; };
+		B0862F4F194401D10032A459 /* images4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F40194401D10032A459 /* images4.jpg */; };
+		B0862F50194401D10032A459 /* images5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F41194401D10032A459 /* images5.jpg */; };
+		B0862F51194401D10032A459 /* images6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F42194401D10032A459 /* images6.jpg */; };
+		B0862F52194401D10032A459 /* images7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F43194401D10032A459 /* images7.jpg */; };
+		B0862F53194401D10032A459 /* images8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F44194401D10032A459 /* images8.jpg */; };
+		B0862F54194401D10032A459 /* images9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F45194401D10032A459 /* images9.jpg */; };
+		B0862F55194401D10032A459 /* images10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F46194401D10032A459 /* images10.jpg */; };
+		B0862F56194401D10032A459 /* images11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F47194401D10032A459 /* images11.jpg */; };
+		B0862F57194401D10032A459 /* images12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F48194401D10032A459 /* images12.jpg */; };
+		B0862F58194401D10032A459 /* images13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F49194401D10032A459 /* images13.jpg */; };
+		B0862F59194401D10032A459 /* images14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F4A194401D10032A459 /* images14.jpg */; };
+		B0862F5A194401D10032A459 /* images15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0862F4B194401D10032A459 /* images15.jpg */; };
+		B0862F6619441FB70032A459 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F5D19441FB70032A459 /* AudioToolbox.framework */; };
+		B0862F6719441FB70032A459 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F5E19441FB70032A459 /* CFNetwork.framework */; };
+		B0862F6819441FB70032A459 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F5F19441FB70032A459 /* CoreLocation.framework */; };
+		B0862F6919441FB70032A459 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6019441FB70032A459 /* libz.dylib */; };
+		B0862F6A19441FB70032A459 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6119441FB70032A459 /* MobileCoreServices.framework */; };
+		B0862F6B19441FB70032A459 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6219441FB70032A459 /* QuartzCore.framework */; };
+		B0862F6C19441FB70032A459 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6319441FB70032A459 /* Security.framework */; };
+		B0862F6D19441FB70032A459 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6419441FB70032A459 /* StoreKit.framework */; };
+		B0862F6E19441FB70032A459 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0862F6519441FB70032A459 /* SystemConfiguration.framework */; };
+		B08CAD9F194434980078C95E /* MGMLogInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CAD9C194434980078C95E /* MGMLogInVC.m */; };
+		B08CADA0194434980078C95E /* MGMSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CAD9E194434980078C95E /* MGMSignUpVC.m */; };
+		B08CADA7194437D60078C95E /* MGMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CADA6194437D60078C95E /* MGMViewController.m */; };
+		B08CADD1194484D80078C95E /* album_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADA9194484D80078C95E /* album_cover.png */; };
+		B08CADD2194484D80078C95E /* app_store_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAA194484D80078C95E /* app_store_button.png */; };
+		B08CADD3194484D80078C95E /* artist_container.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAB194484D80078C95E /* artist_container.png */; };
+		B08CADD4194484D80078C95E /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAC194484D80078C95E /* avatar.png */; };
+		B08CADD5194484D80078C95E /* big_star.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAD194484D80078C95E /* big_star.png */; };
+		B08CADD6194484D80078C95E /* close_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAE194484D80078C95E /* close_button@2x.png */; };
+		B08CADD7194484D80078C95E /* facebook_album_art.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADAF194484D80078C95E /* facebook_album_art.png */; };
+		B08CADD8194484D80078C95E /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB0194484D80078C95E /* facebook_login.png */; };
+		B08CADD9194484D80078C95E /* Favorite_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB1194484D80078C95E /* Favorite_Icon.png */; };
+		B08CADDA194484D80078C95E /* footer_background.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB2194484D80078C95E /* footer_background.png */; };
+		B08CADDB194484D80078C95E /* jack.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB3194484D80078C95E /* jack.png */; };
+		B08CADDC194484D80078C95E /* little_star.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB4194484D80078C95E /* little_star.png */; };
+		B08CADDD194484D80078C95E /* logo_color.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB5194484D80078C95E /* logo_color.png */; };
+		B08CADDE194484D80078C95E /* members_only_container.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB6194484D80078C95E /* members_only_container.png */; };
+		B08CADDF194484D80078C95E /* members_only_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB7194484D80078C95E /* members_only_menu.png */; };
+		B08CADE0194484D80078C95E /* Menu_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB8194484D80078C95E /* Menu_Bar.png */; };
+		B08CADE1194484D80078C95E /* page_content_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADB9194484D80078C95E /* page_content_background@2x.png */; };
+		B08CADE2194484D80078C95E /* password_area.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBA194484D80078C95E /* password_area.png */; };
+		B08CADE3194484D80078C95E /* play_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBB194484D80078C95E /* play_icon.png */; };
+		B08CADE4194484D80078C95E /* popup.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBC194484D80078C95E /* popup.png */; };
+		B08CADE5194484D80078C95E /* pulse-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBD194484D80078C95E /* pulse-logo.png */; };
+		B08CADE6194484D80078C95E /* PulseLogo-CMYK-noFM-4color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBE194484D80078C95E /* PulseLogo-CMYK-noFM-4color.jpg */; };
+		B08CADE7194484D80078C95E /* punch_brothers.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADBF194484D80078C95E /* punch_brothers.png */; };
+		B08CADE8194484D80078C95E /* rock_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC0194484D80078C95E /* rock_icon.png */; };
+		B08CADE9194484D80078C95E /* rockandroll_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC1194484D80078C95E /* rockandroll_icon.png */; };
+		B08CADEA194484D80078C95E /* roll_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC2194484D80078C95E /* roll_icon.png */; };
+		B08CADEB194484D80078C95E /* scroll_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC3194484D80078C95E /* scroll_bar.png */; };
+		B08CADEC194484D80078C95E /* scroll_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC4194484D80078C95E /* scroll_down.png */; };
+		B08CADED194484D80078C95E /* scroll_up.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC5194484D80078C95E /* scroll_up.png */; };
+		B08CADEE194484D80078C95E /* search_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC6194484D80078C95E /* search_bar.png */; };
+		B08CADEF194484D80078C95E /* search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC7194484D80078C95E /* search_icon.png */; };
+		B08CADF0194484D80078C95E /* settings_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC8194484D80078C95E /* settings_logo.png */; };
+		B08CADF1194484D80078C95E /* sign_up_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADC9194484D80078C95E /* sign_up_button.png */; };
+		B08CADF2194484D80078C95E /* sign_up_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCA194484D80078C95E /* sign_up_icon.png */; };
+		B08CADF3194484D80078C95E /* sign_up_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCB194484D80078C95E /* sign_up_menu.png */; };
+		B08CADF4194484D80078C95E /* sign-up-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCC194484D80078C95E /* sign-up-button.png */; };
+		B08CADF5194484D80078C95E /* submit_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCD194484D80078C95E /* submit_button.png */; };
+		B08CADF6194484D80078C95E /* username_.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCE194484D80078C95E /* username_.png */; };
+		B08CADF7194484D80078C95E /* white_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADCF194484D80078C95E /* white_logo.png */; };
+		B08CADF8194484D80078C95E /* wood_brothers.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADD0194484D80078C95E /* wood_brothers.png */; };
+		B08CADFA19448BAB0078C95E /* iphone-layout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B08CADF919448BAB0078C95E /* iphone-layout@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DC50899194295B3005A9BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DC50871194295B3005A9BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DC50878194295B3005A9BEA;
+			remoteInfo = MusicGrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DC50879194295B3005A9BEA /* MusicGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC5087C194295B3005A9BEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0DC5087E194295B3005A9BEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0DC50880194295B3005A9BEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0DC50884194295B3005A9BEA /* MusicGrid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicGrid-Info.plist"; sourceTree = "<group>"; };
+		0DC50886194295B3005A9BEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DC50888194295B3005A9BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DC5088A194295B3005A9BEA /* MusicGrid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicGrid-Prefix.pch"; sourceTree = "<group>"; };
+		0DC5088B194295B3005A9BEA /* MGMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGMAppDelegate.h; sourceTree = "<group>"; };
+		0DC5088C194295B3005A9BEA /* MGMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGMAppDelegate.m; sourceTree = "<group>"; };
+		0DC5088E194295B3005A9BEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DC50894194295B3005A9BEA /* MusicGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC50895194295B3005A9BEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0DC5089D194295B3005A9BEA /* MusicGridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicGridTests-Info.plist"; sourceTree = "<group>"; };
+		0DC5089F194295B3005A9BEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DC508A1194295B3005A9BEA /* MusicGridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicGridTests.m; sourceTree = "<group>"; };
+		B00D0F1C1944B806004C44CF /* MGMArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMArtistsViewController.h; sourceTree = "<group>"; };
+		B00D0F1D1944B806004C44CF /* MGMArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMArtistsViewController.m; sourceTree = "<group>"; };
+		B00D0F1F1944CE4C004C44CF /* ios-members area@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-members area@2x.png"; sourceTree = "<group>"; };
+		B03E98721942AEED00DE10D6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		B03E987419437B6A00DE10D6 /* MGMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMData.h; sourceTree = "<group>"; };
+		B03E987519437B6A00DE10D6 /* MGMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMData.m; sourceTree = "<group>"; };
+		B0547A1319442FCB00D7BFA1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B0862F2D1943D1440032A459 /* MGMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMTableView.h; sourceTree = "<group>"; };
+		B0862F2E1943D1440032A459 /* MGMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMTableView.m; sourceTree = "<group>"; };
+		B0862F2F1943D1440032A459 /* MGMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMTableViewCell.h; sourceTree = "<group>"; };
+		B0862F301943D1440032A459 /* MGMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMTableViewCell.m; sourceTree = "<group>"; };
+		B0862F331943D1820032A459 /* MGMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMCollectionViewController.h; sourceTree = "<group>"; };
+		B0862F341943D1820032A459 /* MGMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMCollectionViewController.m; sourceTree = "<group>"; };
+		B0862F371943E3550032A459 /* Mockup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mockup.png; sourceTree = "<group>"; };
+		B0862F391943ED510032A459 /* Mockup2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup2@2x.png"; sourceTree = "<group>"; };
+		B0862F3D194401D10032A459 /* images1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images1.jpg; sourceTree = "<group>"; };
+		B0862F3E194401D10032A459 /* images2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images2.jpg; sourceTree = "<group>"; };
+		B0862F3F194401D10032A459 /* images3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images3.jpg; sourceTree = "<group>"; };
+		B0862F40194401D10032A459 /* images4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images4.jpg; sourceTree = "<group>"; };
+		B0862F41194401D10032A459 /* images5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images5.jpg; sourceTree = "<group>"; };
+		B0862F42194401D10032A459 /* images6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images6.jpg; sourceTree = "<group>"; };
+		B0862F43194401D10032A459 /* images7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images7.jpg; sourceTree = "<group>"; };
+		B0862F44194401D10032A459 /* images8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images8.jpg; sourceTree = "<group>"; };
+		B0862F45194401D10032A459 /* images9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images9.jpg; sourceTree = "<group>"; };
+		B0862F46194401D10032A459 /* images10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images10.jpg; sourceTree = "<group>"; };
+		B0862F47194401D10032A459 /* images11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images11.jpg; sourceTree = "<group>"; };
+		B0862F48194401D10032A459 /* images12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images12.jpg; sourceTree = "<group>"; };
+		B0862F49194401D10032A459 /* images13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images13.jpg; sourceTree = "<group>"; };
+		B0862F4A194401D10032A459 /* images14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images14.jpg; sourceTree = "<group>"; };
+		B0862F4B194401D10032A459 /* images15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images15.jpg; sourceTree = "<group>"; };
+		B0862F5D19441FB70032A459 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0862F5E19441FB70032A459 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B0862F5F19441FB70032A459 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0862F6019441FB70032A459 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B0862F6119441FB70032A459 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B0862F6219441FB70032A459 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B0862F6319441FB70032A459 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B0862F6419441FB70032A459 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B0862F6519441FB70032A459 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B08CAD9B194434980078C95E /* MGMLogInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMLogInVC.h; sourceTree = "<group>"; };
+		B08CAD9C194434980078C95E /* MGMLogInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMLogInVC.m; sourceTree = "<group>"; };
+		B08CAD9D194434980078C95E /* MGMSignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMSignUpVC.h; sourceTree = "<group>"; };
+		B08CAD9E194434980078C95E /* MGMSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMSignUpVC.m; sourceTree = "<group>"; };
+		B08CADA5194437D60078C95E /* MGMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMViewController.h; sourceTree = "<group>"; };
+		B08CADA6194437D60078C95E /* MGMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMViewController.m; sourceTree = "<group>"; };
+		B08CADA9194484D80078C95E /* album_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album_cover.png; sourceTree = "<group>"; };
+		B08CADAA194484D80078C95E /* app_store_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_store_button.png; sourceTree = "<group>"; };
+		B08CADAB194484D80078C95E /* artist_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_container.png; sourceTree = "<group>"; };
+		B08CADAC194484D80078C95E /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		B08CADAD194484D80078C95E /* big_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_star.png; sourceTree = "<group>"; };
+		B08CADAE194484D80078C95E /* close_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_button@2x.png"; sourceTree = "<group>"; };
+		B08CADAF194484D80078C95E /* facebook_album_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_album_art.png; sourceTree = "<group>"; };
+		B08CADB0194484D80078C95E /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
+		B08CADB1194484D80078C95E /* Favorite_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_Icon.png; sourceTree = "<group>"; };
+		B08CADB2194484D80078C95E /* footer_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer_background.png; sourceTree = "<group>"; };
+		B08CADB3194484D80078C95E /* jack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jack.png; sourceTree = "<group>"; };
+		B08CADB4194484D80078C95E /* little_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = little_star.png; sourceTree = "<group>"; };
+		B08CADB5194484D80078C95E /* logo_color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_color.png; sourceTree = "<group>"; };
+		B08CADB6194484D80078C95E /* members_only_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = members_only_container.png; sourceTree = "<group>"; };
+		B08CADB7194484D80078C95E /* members_only_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = members_only_menu.png; sourceTree = "<group>"; };
+		B08CADB8194484D80078C95E /* Menu_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_Bar.png; sourceTree = "<group>"; };
+		B08CADB9194484D80078C95E /* page_content_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_content_background@2x.png"; sourceTree = "<group>"; };
+		B08CADBA194484D80078C95E /* password_area.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_area.png; sourceTree = "<group>"; };
+		B08CADBB194484D80078C95E /* play_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_icon.png; sourceTree = "<group>"; };
+		B08CADBC194484D80078C95E /* popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup.png; sourceTree = "<group>"; };
+		B08CADBD194484D80078C95E /* pulse-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-logo.png"; sourceTree = "<group>"; };
+		B08CADBE194484D80078C95E /* PulseLogo-CMYK-noFM-4color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PulseLogo-CMYK-noFM-4color.jpg"; sourceTree = "<group>"; };
+		B08CADBF194484D80078C95E /* punch_brothers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punch_brothers.png; sourceTree = "<group>"; };
+		B08CADC0194484D80078C95E /* rock_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock_icon.png; sourceTree = "<group>"; };
+		B08CADC1194484D80078C95E /* rockandroll_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockandroll_icon.png; sourceTree = "<group>"; };
+		B08CADC2194484D80078C95E /* roll_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roll_icon.png; sourceTree = "<group>"; };
+		B08CADC3194484D80078C95E /* scroll_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll_bar.png; sourceTree = "<group>"; };
+		B08CADC4194484D80078C95E /* scroll_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll_down.png; sourceTree = "<group>"; };
+		B08CADC5194484D80078C95E /* scroll_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll_up.png; sourceTree = "<group>"; };
+		B08CADC6194484D80078C95E /* search_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bar.png; sourceTree = "<group>"; };
+		B08CADC7194484D80078C95E /* search_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_icon.png; sourceTree = "<group>"; };
+		B08CADC8194484D80078C95E /* settings_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_logo.png; sourceTree = "<group>"; };
+		B08CADC9194484D80078C95E /* sign_up_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_up_button.png; sourceTree = "<group>"; };
+		B08CADCA194484D80078C95E /* sign_up_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_up_icon.png; sourceTree = "<group>"; };
+		B08CADCB194484D80078C95E /* sign_up_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_up_menu.png; sourceTree = "<group>"; };
+		B08CADCC194484D80078C95E /* sign-up-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-up-button.png"; sourceTree = "<group>"; };
+		B08CADCD194484D80078C95E /* submit_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit_button.png; sourceTree = "<group>"; };
+		B08CADCE194484D80078C95E /* username_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = username_.png; sourceTree = "<group>"; };
+		B08CADCF194484D80078C95E /* white_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_logo.png; sourceTree = "<group>"; };
+		B08CADD0194484D80078C95E /* wood_brothers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood_brothers.png; sourceTree = "<group>"; };
+		B08CADF919448BAB0078C95E /* iphone-layout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-layout@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DC50876194295B3005A9BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0862F6619441FB70032A459 /* AudioToolbox.framework in Frameworks */,
+				B0862F6719441FB70032A459 /* CFNetwork.framework in Frameworks */,
+				B0862F6819441FB70032A459 /* CoreLocation.framework in Frameworks */,
+				B0862F6919441FB70032A459 /* libz.dylib in Frameworks */,
+				B0862F6A19441FB70032A459 /* MobileCoreServices.framework in Frameworks */,
+				B0862F6B19441FB70032A459 /* QuartzCore.framework in Frameworks */,
+				B0862F6C19441FB70032A459 /* Security.framework in Frameworks */,
+				B0862F6D19441FB70032A459 /* StoreKit.framework in Frameworks */,
+				B0862F6E19441FB70032A459 /* SystemConfiguration.framework in Frameworks */,
+				0DC5087F194295B3005A9BEA /* CoreGraphics.framework in Frameworks */,
+				B0547A1419442FCB00D7BFA1 /* Parse.framework in Frameworks */,
+				B03E98731942AEED00DE10D6 /* FacebookSDK.framework in Frameworks */,
+				0DC50881194295B3005A9BEA /* UIKit.framework in Frameworks */,
+				0DC5087D194295B3005A9BEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC50891194295B3005A9BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC50896194295B3005A9BEA /* XCTest.framework in Frameworks */,
+				0DC50898194295B3005A9BEA /* UIKit.framework in Frameworks */,
+				0DC50897194295B3005A9BEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC50870194295B3005A9BEA = {
+			isa = PBXGroup;
+			children = (
+				B08CADA8194484B90078C95E /* UI Elements */,
+				B0862F361943E3450032A459 /* Images */,
+				B00D0F1C1944B806004C44CF /* MGMArtistsViewController.h */,
+				B00D0F1D1944B806004C44CF /* MGMArtistsViewController.m */,
+				B08CAD9B194434980078C95E /* MGMLogInVC.h */,
+				B08CAD9C194434980078C95E /* MGMLogInVC.m */,
+				B08CAD9D194434980078C95E /* MGMSignUpVC.h */,
+				B08CAD9E194434980078C95E /* MGMSignUpVC.m */,
+				B08CADA5194437D60078C95E /* MGMViewController.h */,
+				B08CADA6194437D60078C95E /* MGMViewController.m */,
+				B0862F331943D1820032A459 /* MGMCollectionViewController.h */,
+				B0862F341943D1820032A459 /* MGMCollectionViewController.m */,
+				B0862F2D1943D1440032A459 /* MGMTableView.h */,
+				B0862F2E1943D1440032A459 /* MGMTableView.m */,
+				B0862F2F1943D1440032A459 /* MGMTableViewCell.h */,
+				B0862F301943D1440032A459 /* MGMTableViewCell.m */,
+				B03E987419437B6A00DE10D6 /* MGMData.h */,
+				B03E987519437B6A00DE10D6 /* MGMData.m */,
+				0DC50882194295B3005A9BEA /* MusicGrid */,
+				0DC5089B194295B3005A9BEA /* MusicGridTests */,
+				0DC5087B194295B3005A9BEA /* Frameworks */,
+				0DC5087A194295B3005A9BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DC5087A194295B3005A9BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DC50879194295B3005A9BEA /* MusicGrid.app */,
+				0DC50894194295B3005A9BEA /* MusicGridTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DC5087B194295B3005A9BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0547A1319442FCB00D7BFA1 /* Parse.framework */,
+				B0862F5D19441FB70032A459 /* AudioToolbox.framework */,
+				B0862F5E19441FB70032A459 /* CFNetwork.framework */,
+				B0862F5F19441FB70032A459 /* CoreLocation.framework */,
+				B0862F6019441FB70032A459 /* libz.dylib */,
+				B0862F6119441FB70032A459 /* MobileCoreServices.framework */,
+				B0862F6219441FB70032A459 /* QuartzCore.framework */,
+				B0862F6319441FB70032A459 /* Security.framework */,
+				B0862F6419441FB70032A459 /* StoreKit.framework */,
+				B0862F6519441FB70032A459 /* SystemConfiguration.framework */,
+				B03E98721942AEED00DE10D6 /* FacebookSDK.framework */,
+				0DC5087C194295B3005A9BEA /* Foundation.framework */,
+				0DC5087E194295B3005A9BEA /* CoreGraphics.framework */,
+				0DC50880194295B3005A9BEA /* UIKit.framework */,
+				0DC50895194295B3005A9BEA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DC50882194295B3005A9BEA /* MusicGrid */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5088B194295B3005A9BEA /* MGMAppDelegate.h */,
+				0DC5088C194295B3005A9BEA /* MGMAppDelegate.m */,
+				0DC5088E194295B3005A9BEA /* Images.xcassets */,
+				0DC50883194295B3005A9BEA /* Supporting Files */,
+			);
+			path = MusicGrid;
+			sourceTree = "<group>";
+		};
+		0DC50883194295B3005A9BEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DC50884194295B3005A9BEA /* MusicGrid-Info.plist */,
+				0DC50885194295B3005A9BEA /* InfoPlist.strings */,
+				0DC50888194295B3005A9BEA /* main.m */,
+				0DC5088A194295B3005A9BEA /* MusicGrid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DC5089B194295B3005A9BEA /* MusicGridTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DC508A1194295B3005A9BEA /* MusicGridTests.m */,
+				0DC5089C194295B3005A9BEA /* Supporting Files */,
+			);
+			path = MusicGridTests;
+			sourceTree = "<group>";
+		};
+		0DC5089C194295B3005A9BEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5089D194295B3005A9BEA /* MusicGridTests-Info.plist */,
+				0DC5089E194295B3005A9BEA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0862F361943E3450032A459 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0862F3D194401D10032A459 /* images1.jpg */,
+				B0862F3E194401D10032A459 /* images2.jpg */,
+				B0862F3F194401D10032A459 /* images3.jpg */,
+				B0862F40194401D10032A459 /* images4.jpg */,
+				B0862F41194401D10032A459 /* images5.jpg */,
+				B0862F42194401D10032A459 /* images6.jpg */,
+				B0862F43194401D10032A459 /* images7.jpg */,
+				B0862F44194401D10032A459 /* images8.jpg */,
+				B0862F45194401D10032A459 /* images9.jpg */,
+				B0862F46194401D10032A459 /* images10.jpg */,
+				B0862F47194401D10032A459 /* images11.jpg */,
+				B0862F48194401D10032A459 /* images12.jpg */,
+				B0862F49194401D10032A459 /* images13.jpg */,
+				B0862F4A194401D10032A459 /* images14.jpg */,
+				B0862F4B194401D10032A459 /* images15.jpg */,
+				B0862F391943ED510032A459 /* Mockup2@2x.png */,
+				B0862F371943E3550032A459 /* Mockup.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B08CADA8194484B90078C95E /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B00D0F1F1944CE4C004C44CF /* ios-members area@2x.png */,
+				B08CADF919448BAB0078C95E /* iphone-layout@2x.png */,
+				B08CADA9194484D80078C95E /* album_cover.png */,
+				B08CADAA194484D80078C95E /* app_store_button.png */,
+				B08CADAB194484D80078C95E /* artist_container.png */,
+				B08CADAC194484D80078C95E /* avatar.png */,
+				B08CADAD194484D80078C95E /* big_star.png */,
+				B08CADAE194484D80078C95E /* close_button@2x.png */,
+				B08CADAF194484D80078C95E /* facebook_album_art.png */,
+				B08CADB0194484D80078C95E /* facebook_login.png */,
+				B08CADB1194484D80078C95E /* Favorite_Icon.png */,
+				B08CADB2194484D80078C95E /* footer_background.png */,
+				B08CADB3194484D80078C95E /* jack.png */,
+				B08CADB4194484D80078C95E /* little_star.png */,
+				B08CADB5194484D80078C95E /* logo_color.png */,
+				B08CADB6194484D80078C95E /* members_only_container.png */,
+				B08CADB7194484D80078C95E /* members_only_menu.png */,
+				B08CADB8194484D80078C95E /* Menu_Bar.png */,
+				B08CADB9194484D80078C95E /* page_content_background@2x.png */,
+				B08CADBA194484D80078C95E /* password_area.png */,
+				B08CADBB194484D80078C95E /* play_icon.png */,
+				B08CADBC194484D80078C95E /* popup.png */,
+				B08CADBD194484D80078C95E /* pulse-logo.png */,
+				B08CADBE194484D80078C95E /* PulseLogo-CMYK-noFM-4color.jpg */,
+				B08CADBF194484D80078C95E /* punch_brothers.png */,
+				B08CADC0194484D80078C95E /* rock_icon.png */,
+				B08CADC1194484D80078C95E /* rockandroll_icon.png */,
+				B08CADC2194484D80078C95E /* roll_icon.png */,
+				B08CADC3194484D80078C95E /* scroll_bar.png */,
+				B08CADC4194484D80078C95E /* scroll_down.png */,
+				B08CADC5194484D80078C95E /* scroll_up.png */,
+				B08CADC6194484D80078C95E /* search_bar.png */,
+				B08CADC7194484D80078C95E /* search_icon.png */,
+				B08CADC8194484D80078C95E /* settings_logo.png */,
+				B08CADC9194484D80078C95E /* sign_up_button.png */,
+				B08CADCA194484D80078C95E /* sign_up_icon.png */,
+				B08CADCB194484D80078C95E /* sign_up_menu.png */,
+				B08CADCC194484D80078C95E /* sign-up-button.png */,
+				B08CADCD194484D80078C95E /* submit_button.png */,
+				B08CADCE194484D80078C95E /* username_.png */,
+				B08CADCF194484D80078C95E /* white_logo.png */,
+				B08CADD0194484D80078C95E /* wood_brothers.png */,
+			);
+			name = "UI Elements";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DC50878194295B3005A9BEA /* MusicGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC508A5194295B3005A9BEA /* Build configuration list for PBXNativeTarget "MusicGrid" */;
+			buildPhases = (
+				0DC50875194295B3005A9BEA /* Sources */,
+				0DC50876194295B3005A9BEA /* Frameworks */,
+				0DC50877194295B3005A9BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicGrid;
+			productName = MusicGrid;
+			productReference = 0DC50879194295B3005A9BEA /* MusicGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DC50893194295B3005A9BEA /* MusicGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC508A8194295B3005A9BEA /* Build configuration list for PBXNativeTarget "MusicGridTests" */;
+			buildPhases = (
+				0DC50890194295B3005A9BEA /* Sources */,
+				0DC50891194295B3005A9BEA /* Frameworks */,
+				0DC50892194295B3005A9BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DC5089A194295B3005A9BEA /* PBXTargetDependency */,
+			);
+			name = MusicGridTests;
+			productName = MusicGridTests;
+			productReference = 0DC50894194295B3005A9BEA /* MusicGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DC50871194295B3005A9BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MGM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ed Salter";
+				TargetAttributes = {
+					0DC50893194295B3005A9BEA = {
+						TestTargetID = 0DC50878194295B3005A9BEA;
+					};
+				};
+			};
+			buildConfigurationList = 0DC50874194295B3005A9BEA /* Build configuration list for PBXProject "MusicGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DC50870194295B3005A9BEA;
+			productRefGroup = 0DC5087A194295B3005A9BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DC50878194295B3005A9BEA /* MusicGrid */,
+				0DC50893194295B3005A9BEA /* MusicGridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DC50877194295B3005A9BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0862F51194401D10032A459 /* images6.jpg in Resources */,
+				B08CADD1194484D80078C95E /* album_cover.png in Resources */,
+				B08CADEA194484D80078C95E /* roll_icon.png in Resources */,
+				B08CADED194484D80078C95E /* scroll_up.png in Resources */,
+				B08CADEF194484D80078C95E /* search_icon.png in Resources */,
+				B08CADD6194484D80078C95E /* close_button@2x.png in Resources */,
+				B08CADE7194484D80078C95E /* punch_brothers.png in Resources */,
+				B08CADFA19448BAB0078C95E /* iphone-layout@2x.png in Resources */,
+				B0862F58194401D10032A459 /* images13.jpg in Resources */,
+				B0862F4C194401D10032A459 /* images1.jpg in Resources */,
+				B08CADE9194484D80078C95E /* rockandroll_icon.png in Resources */,
+				B00D0F201944CE4C004C44CF /* ios-members area@2x.png in Resources */,
+				B0862F56194401D10032A459 /* images11.jpg in Resources */,
+				0DC50887194295B3005A9BEA /* InfoPlist.strings in Resources */,
+				B0862F57194401D10032A459 /* images12.jpg in Resources */,
+				B08CADE5194484D80078C95E /* pulse-logo.png in Resources */,
+				B0862F5A194401D10032A459 /* images15.jpg in Resources */,
+				B08CADDC194484D80078C95E /* little_star.png in Resources */,
+				B08CADEE194484D80078C95E /* search_bar.png in Resources */,
+				B0862F4D194401D10032A459 /* images2.jpg in Resources */,
+				B08CADD8194484D80078C95E /* facebook_login.png in Resources */,
+				B08CADF6194484D80078C95E /* username_.png in Resources */,
+				B08CADDF194484D80078C95E /* members_only_menu.png in Resources */,
+				B08CADDE194484D80078C95E /* members_only_container.png in Resources */,
+				B0862F54194401D10032A459 /* images9.jpg in Resources */,
+				B08CADD5194484D80078C95E /* big_star.png in Resources */,
+				B08CADE3194484D80078C95E /* play_icon.png in Resources */,
+				B08CADE4194484D80078C95E /* popup.png in Resources */,
+				B08CADE8194484D80078C95E /* rock_icon.png in Resources */,
+				B0862F59194401D10032A459 /* images14.jpg in Resources */,
+				B08CADF7194484D80078C95E /* white_logo.png in Resources */,
+				B08CADF5194484D80078C95E /* submit_button.png in Resources */,
+				0DC5088F194295B3005A9BEA /* Images.xcassets in Resources */,
+				B08CADDD194484D80078C95E /* logo_color.png in Resources */,
+				B0862F4F194401D10032A459 /* images4.jpg in Resources */,
+				B08CADD7194484D80078C95E /* facebook_album_art.png in Resources */,
+				B08CADDA194484D80078C95E /* footer_background.png in Resources */,
+				B0862F52194401D10032A459 /* images7.jpg in Resources */,
+				B08CADD3194484D80078C95E /* artist_container.png in Resources */,
+				B08CADF2194484D80078C95E /* sign_up_icon.png in Resources */,
+				B08CADE2194484D80078C95E /* password_area.png in Resources */,
+				B08CADD4194484D80078C95E /* avatar.png in Resources */,
+				B08CADD9194484D80078C95E /* Favorite_Icon.png in Resources */,
+				B08CADE0194484D80078C95E /* Menu_Bar.png in Resources */,
+				B0862F50194401D10032A459 /* images5.jpg in Resources */,
+				B08CADF3194484D80078C95E /* sign_up_menu.png in Resources */,
+				B08CADEC194484D80078C95E /* scroll_down.png in Resources */,
+				B08CADD2194484D80078C95E /* app_store_button.png in Resources */,
+				B0862F53194401D10032A459 /* images8.jpg in Resources */,
+				B08CADF4194484D80078C95E /* sign-up-button.png in Resources */,
+				B08CADEB194484D80078C95E /* scroll_bar.png in Resources */,
+				B0862F55194401D10032A459 /* images10.jpg in Resources */,
+				B08CADDB194484D80078C95E /* jack.png in Resources */,
+				B08CADE1194484D80078C95E /* page_content_background@2x.png in Resources */,
+				B08CADF0194484D80078C95E /* settings_logo.png in Resources */,
+				B0862F4E194401D10032A459 /* images3.jpg in Resources */,
+				B0862F381943E3550032A459 /* Mockup.png in Resources */,
+				B08CADF1194484D80078C95E /* sign_up_button.png in Resources */,
+				B08CADE6194484D80078C95E /* PulseLogo-CMYK-noFM-4color.jpg in Resources */,
+				B08CADF8194484D80078C95E /* wood_brothers.png in Resources */,
+				B0862F3A1943ED510032A459 /* Mockup2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC50892194295B3005A9BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC508A0194295B3005A9BEA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DC50875194295B3005A9BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08CADA7194437D60078C95E /* MGMViewController.m in Sources */,
+				B0862F311943D1440032A459 /* MGMTableView.m in Sources */,
+				B08CADA0194434980078C95E /* MGMSignUpVC.m in Sources */,
+				B0862F321943D1440032A459 /* MGMTableViewCell.m in Sources */,
+				B0862F351943D1820032A459 /* MGMCollectionViewController.m in Sources */,
+				0DC5088D194295B3005A9BEA /* MGMAppDelegate.m in Sources */,
+				B08CAD9F194434980078C95E /* MGMLogInVC.m in Sources */,
+				0DC50889194295B3005A9BEA /* main.m in Sources */,
+				B03E987619437B6A00DE10D6 /* MGMData.m in Sources */,
+				B00D0F1E1944B806004C44CF /* MGMArtistsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC50890194295B3005A9BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC508A2194295B3005A9BEA /* MusicGridTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DC5089A194295B3005A9BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DC50878194295B3005A9BEA /* MusicGrid */;
+			targetProxy = 0DC50899194295B3005A9BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DC50885194295B3005A9BEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC50886194295B3005A9BEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DC5089E194295B3005A9BEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC5089F194295B3005A9BEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DC508A3194295B3005A9BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DC508A4194295B3005A9BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DC508A6194295B3005A9BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicGrid/MusicGrid-Prefix.pch";
+				INFOPLIST_FILE = "MusicGrid/MusicGrid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0DC508A7194295B3005A9BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicGrid/MusicGrid-Prefix.pch";
+				INFOPLIST_FILE = "MusicGrid/MusicGrid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0DC508A9194295B3005A9BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicGrid.app/MusicGrid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicGrid/MusicGrid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MusicGridTests/MusicGridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0DC508AA194295B3005A9BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicGrid.app/MusicGrid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicGrid/MusicGrid-Prefix.pch";
+				INFOPLIST_FILE = "MusicGridTests/MusicGridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DC50874194295B3005A9BEA /* Build configuration list for PBXProject "MusicGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC508A3194295B3005A9BEA /* Debug */,
+				0DC508A4194295B3005A9BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DC508A5194295B3005A9BEA /* Build configuration list for PBXNativeTarget "MusicGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC508A6194295B3005A9BEA /* Debug */,
+				0DC508A7194295B3005A9BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DC508A8194295B3005A9BEA /* Build configuration list for PBXNativeTarget "MusicGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC508A9194295B3005A9BEA /* Debug */,
+				0DC508AA194295B3005A9BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DC50871194295B3005A9BEA /* Project object */;
+}
